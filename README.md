@@ -8,7 +8,7 @@ Desenvolver um software intuitivo e abrangente que auxilie os usu√°rios na cria√
 
 * Bernardo Sousa Polakiewicz
 * Jamille Micaele Soares Ferreira
-* Jefferson Silva Alves
+* Jefferson Silva Alves (O integrante saiu do grupo)
 * Matheus Santos Dias Gomes
 * Paulo Henrique Fonseca de Assis
 * Pedro Porto Ramalho
