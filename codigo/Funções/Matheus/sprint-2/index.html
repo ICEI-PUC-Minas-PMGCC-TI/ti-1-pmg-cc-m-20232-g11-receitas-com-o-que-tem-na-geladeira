@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FridgEasy - Receitas de Geladeira</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            background-color: #4286f4;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 36px;
+        }
+
+        .slogan {
+            font-style: italic;
+        }
+
+        .section-title {
+            background-color: #4286f4;
+            color: white;
+            padding: 10px;
+        }
+
+        .ingredient-list, .recipe-list, .shopping-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .ingredient-list li, .recipe-list li, .shopping-list li {
+            padding: 5px;
+        }
+
+        .recipe-description {
+            font-style: italic;
+        }
+
+        .footer {
+            background-color: #4286f4;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">FridgEasy</h1>
+        <p class="slogan">Receitas deliciosas com o que você tem na geladeira.</p>
+    </header>
+    
+    <section id="ingredients" class="section">
+        <h2 class="section-title">Ingredientes na Geladeira:</h2>
+        <ul class="ingredient-list">
+            <li>Leite</li>
+            <li>Ovos</li>
+            <li>Queijo</li>
+            <li>Tomate</li>
+            <!-- Adicione mais ingredientes aqui -->
+        </ul>
+    </section>
+    
+    <section id="recipes" class="section">
+        <h2 class="section-title">Receitas Disponíveis:</h2>
+        <ul class="recipe-list">
+            <li class="recipe">
+                <h3 class="recipe-title">Omelete de Queijo e Tomate</h3>
+                <p class="recipe-description">Uma omelete simples com queijo e tomate.</p>
+            </li>
+            <li class="recipe">
+                <h3 class="recipe-title">Macarrão Alfredo</h3>
+                <p class="recipe-description">Macarrão com molho Alfredo cremoso.</p>
+            </li>
+            <!-- Adicione mais receitas aqui -->
+        </ul>
+    </section>
+
+    <section id="shopping-list" class="section">
+        <h2 class="section-title">Lista de Compras:</h2>
+        <ul class="shopping-list">
+            <li>Leite (1 galão) - R$ 3.99</li>
+            <li>Ovos (1 dúzia) - R$ 2.49</li>
+            <!-- Adicione mais itens à lista de compras aqui -->
+        </ul>
+
+        <form id="add-item-form" class="shopping-form">
+            <label for="item">Adicionar Item à Lista de Compras:</label>
+            <input type="text" id="item" name="item" placeholder="Nome do item" required>
+            <input type="number" id="quantity" name="quantity" placeholder="Quantidade" required>
+            <input type="number" id="price" name="price" step="0.01" placeholder="Preço por unidade" required>
+            <button type="submit">Adicionar</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 FridgEasy. Todos os direitos reservados.</p>
+    </footer>
+</body>
+              </html>
