@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FridgEasy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>FridgEasy - Lista de Compras</h1>
+
+    <form id="addItemForm">
+        <label for="itemName">Nome do Item:</label>
+        <input type="text" id="itemName" required>
+
+        <label for="itemPrice">Preço do Item (R$):</label>
+        <input type="number" id="itemPrice" step="0.01" required>
+
+        <button type="button" onclick="addItem()">Adicionar Item</button>
+    </form>
+
+    <table id="shoppingList">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Lista de compras será exibida aqui --
+        </tbody>
+    </table>
+
+    <div id="total"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
