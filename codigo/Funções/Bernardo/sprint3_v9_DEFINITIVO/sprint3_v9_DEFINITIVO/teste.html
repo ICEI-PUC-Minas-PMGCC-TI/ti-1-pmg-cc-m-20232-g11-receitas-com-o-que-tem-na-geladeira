@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="barra_animada.css">
+    <script src="teste.js"></script>
+    <script src="filtro.js"></script>
+    <title>Filtro de Buscas</title>
+</head>
+
+<body>
+    <div class="search-box">
+        <input type="text" id="pesquisa" class="search-text" placeholder="Pesquisar:">
+        <a href="#" id="botaoBusca1" class="search-button">
+            <img src="search.svg" alt="lupa de pesquisa" height="20" width="20">
+        </a>
+        <a href="#" id="botaoBusca2" class="search-button">
+            <img src="arrow-down-circle.svg" alt="lupa de pesquisa" height="20" width="20">
+        </a>
+    </div>
+
+    <div id="caixa1">
+        <h2>Filtrar Pesquisa:</h2>
+        <h3>Marque o que você tem na geladeira/dispensa:</h3>
+        <!-- Conteúdo da Caixa 1 -->
+        <!-- Adicione os elementos desejados aqui -->
+        <div class="container">
+            <!-- Caixa 2 localizada à direita dentro da Caixa 1 -->
+            <div id="caixa2">
+                <div class="stacked-options">
+                    <div id="checkbox-container"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Outros elementos desejados podem ser adicionados aqui -->
+    </div>
+
+    <div id="resultados-container">
+        <ul id="resultados"></ul>
+        <div id="informacoesReceita"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+/* Definindo as propriedades do corpo da página */
+body {
+    margin: 0; /* Remove margens padrão do corpo */
+    height: 100vh; /* Define a altura para 100% da altura da janela do navegador */
+    width: 100vw; /* Define a largura para 100% da largura da janela do navegador */
+    background-color: #aec7e2; /* Define a cor de fundo para um tom de azul */
+}
+
+/* Estilizando a caixa de pesquisa */
+.search-box {
+    position: absolute; /* Define a posição absoluta para o elemento */
+    top: 40px; /* Define a distância a partir do topo da janela do navegador */
+    left: 50%; /* Define a posição a 50% da largura da janela do navegador */
+    transform: translateX(-50%); /* Move o elemento para a esquerda para centralizá-lo */
+    background: #151335; /* Define a cor de fundo para um tom de roxo escuro */
+    height: 40px; /* Define a altura da caixa de pesquisa */
+    padding: 10px; /* Adiciona preenchimento interno à caixa */
+    border-radius: 40px; /* Define bordas arredondadas */
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: space-between; /* Alinha os elementos internos com espaço entre eles */
+    align-items: center; /* Centraliza verticalmente os elementos internos */
+}
+
+/* Estilizando o campo de texto de pesquisa */
+.search-text {
+    border: none; /* Remove a borda */
+    background: none; /* Remove o plano de fundo */
+    outline: none; /* Remove a borda de foco */
+    padding: 0; /* Remove o preenchimento interno */
+    color: #f0f5fb; /* Define a cor do texto para um tom de branco */
+    font-size: 16px; /* Define o tamanho da fonte */
+    line-height: 40px; /* Alinha verticalmente o texto no centro da caixa */
+    width: 240px; /* Defina a largura inicial como 240px */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Define a fonte */
+}
+
+/* Estilizando o botão de pesquisa */
+.search-button {
+    width: 40px; /* Define a largura do botão */
+    height: 40px; /* Define a altura do botão */
+    border-radius: 50%; /* Define bordas arredondadas para criar um botão circular */
+    background: #f0f5fb; /* Define a cor de fundo para um tom de branco */
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo do botão */
+    align-items: center; /* Centraliza verticalmente o conteúdo do botão */
+}
+
+/* Estilizando o segundo botão */
+#botaoBusca2 {
+    width: 40px; /* Define a largura do segundo botão */
+    height: 40px; /* Define a altura do segundo botão */
+    border-radius: 50%; /* Define bordas arredondadas para criar um botão circular */
+    background: #f0f5fb; /* Define a cor de fundo para um tom de branco */
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo do segundo botão */
+    align-items: center; /* Centraliza verticalmente o conteúdo do segundo botão */
+}
+
+/* Define a cor do texto de placeholder no campo de pesquisa */
+::-webkit-input-placeholder {
+    color: #3b4a5a;
+}
+
+/* Estilizando as seções "resultados" e "informacoesReceita" */
+#resultados {
+    margin-top: 160px; /* Define a margem superior de 160px */
+    float: left; /* Faz o elemento flutuar à esquerda */
+    width: 30%; /* Define a largura como 30% do contêiner pai */
+}
+
+#informacoesReceita {
+    margin-top: 160px; /* Define a margem superior de 160px */
+    float: left; /* Faz o elemento flutuar à esquerda */
+    width: 40%; /* Define a largura como 40% do contêiner pai */
+    word-wrap: break-word; /* Quebra de palavras longas */
+    overflow-x: hidden; /* Oculta a barra de rolagem horizontal se necessário */
+}
+
+/* Define o layout flexível para os contêineres de resultados e informações da receita */
+#resultados-container {
+    display: flex;
+}
+
+#resultados {
+    flex: 1; /* O elemento ocupa a mesma largura flexível */
+}
+
+#informacoesReceita {
+    flex: 1; /* O elemento ocupa a mesma largura flexível */
+}
+
+/* Oculta a caixa1 por padrão */
+#caixa1 {
+    display: none;
+}
+
+/* Estilizando a caixa1, que é exibida após a interação do usuário */
+#caixa1 {
+    display: none; /* Inicialmente, a caixa1 é oculta */
+    position: absolute; /* Define a posição absoluta */
+    top: 140px; /* Ajuste a distância a partir do topo da janela do navegador para adicionar uma margem vertical */
+    left: 50%; /* Define a posição a 50% da largura da janela do navegador */
+    transform: translateX(-50%); /* Move a caixa para a esquerda para centralizá-la */
+    width: 800px; /* Define a largura da caixa retangular */
+    height: 450px; /* Aumenta a altura da caixa para 400px */
+    background: #ccc; /* Define a cor de fundo como cinza */
+    border: 2px solid #333; /* Adiciona uma borda visível */
+    padding: 10px; /* Adiciona um espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    border-radius: 20px; /* Arredonda as bordas com um raio de 20px */
+}
+
+/* Estilizando a div de botões */
+.botoes {
+    display: flex;
+    flex-direction: column; /* Empilha os botões verticalmente */
+    align-items: flex-start; /* Alinha à esquerda */
+}
+
+/* Estilizando os botões */
+.botoes button {
+    width: 120px; /* Define a largura desejada para os botões */
+    height: 25px; /* Define a altura desejada para os botões */
+    border-radius: 10px; /* Arredonde as bordas dos botões */
+    margin: 5px; /* Espaço entre os botões */
+}
+
+
+/* Estilizando a Caixa 2 */
+#caixa2 {
+    width: 800px; /* Define a largura da Caixa 2 (por exemplo, 200px) */
+    height: 350px; /* Define a altura da Caixa 2 (por exemplo, 150px) */
+    border: 2px solid #333; /* Adicione uma borda visível */
+    padding: 10px; /* Adicione um espaçamento interno */
+    text-align: center; /* Centralize o conteúdo horizontalmente */
+    border-radius: 10px; /* Arredonde as bordas com um raio de 10px */
+    max-height: 320px; /* Defina a altura máxima desejada para a Caixa 2 */
+    overflow-y: auto; /* Adicione uma barra de rolagem vertical dentro da Caixa 2 quando o conteúdo exceder a altura máxima */
+}
+
+/* Estilize a barra de rolagem (pode não ser suportado em todos os navegadores) */
+#caixa2::-webkit-scrollbar {
+    width: 10px; /* Defina a largura da barra de rolagem */
+    border-radius: 5px; /* Arredonde as bordas da barra de rolagem */
+}
+
+#caixa2::-webkit-scrollbar-thumb {
+    background: #777; /* Cor de fundo da barra de rolagem */
+    border-radius: 5px; /* Arredonde as bordas do marcador de scroll */
+}
+
+
+/* Estilizando o contêiner que abriga a Caixa 2 e os botões */
+.container {
+    display: flex; /* Usar flexbox para o layout */
+    justify-content: space-between; /* Coloca a Caixa 2 à direita */
+}
+
+
+/* Alinhar as caixas de marcação mais à esquerda */
+.stacked-options label {
+    display: block;
+    margin-bottom: 5px; /* Espaçamento entre as opções */
+    margin-left: 0; /* Remove a margem à esquerda */
+    text-align: left;
+    max-height: 200px; /* Defina a altura máxima desejada para a Caixa 2 */
+    overflow-y: auto; /* Adicione uma barra de rolagem vertical quando o conteúdo exceder a altura máxima */
+}
+
+/* Estilo do botão ao passar o mouse (hover) */
+#botaoFiltro:hover {
+    background-color: #007bff; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+.auxiliar-search{
+    position: absolute;
+}

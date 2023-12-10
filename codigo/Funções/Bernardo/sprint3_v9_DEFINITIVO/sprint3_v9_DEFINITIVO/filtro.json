@@ -1,0 +1,105 @@
+
+{
+  "receitas": [
+    {
+      "id": 1,
+      "nome": "Salada de Quinoa",
+      "ingredientes": [
+        {"nome":"quinoa","tipo":"temperos"},
+        {"nome": "tomate","tipo":"fruta"},
+        {"nome":"pepino","tipo":"fruta"},
+        {"nome":"azeitonas","tipo":"fruta"},
+        {"nome":"manjericão","tipo":"verduras"}
+      ],
+      "instrucoes": "Cozinhe a quinoa e misture com os ingredientes cortados. Tempere com azeite e manjericão fresco."
+    },
+    {
+      "id": 2,
+      "nome": "Frango Grelhado com Vegetais",
+      "ingredientes": [
+        {"nome": "peito de frango", "tipo": "proteínas"},
+        {"nome": "brócolis", "tipo": "verduras"},
+        {"nome": "pimentão", "tipo": "verduras"},
+        {"nome": "cenoura", "tipo": "legumes"}
+      ],
+      "instrucoes": "Grelhe o frango e os vegetais até que fiquem dourados. Sirva com um molho de iogurte."
+    },
+    {
+      "id": 3,
+      "nome": "Smoothie de Frutas",
+      "ingredientes": [
+        {"nome": "morango", "tipo": "fruta"},
+        {"nome": "banana", "tipo": "fruta"},
+        {"nome": "iogurte", "tipo": "leite/derivados"},
+        {"nome": "espinafre", "tipo": "verduras"}
+      ],
+      "instrucoes": "Misture as frutas, o iogurte e o espinafre no liquidificador até obter uma consistência suave."
+    },
+    {
+      "id": 4,
+      "nome": "Peixe Assado com Limão",
+      "ingredientes": [
+        {"nome": "filé de peixe", "tipo": "proteínas"},
+        {"nome": "limão", "tipo": "fruta"},
+        {"nome": "alho", "tipo": "temperos"},
+        {"nome": "azeite de oliva", "tipo": "outros"}
+      ],
+      "instrucoes": "Tempere o peixe com alho, regue com azeite e asse com fatias de limão."
+    },
+    {
+      "id": 5,
+      "nome": "Wrap de Frango e Abacate",
+      "ingredientes": [
+        {"nome": "peito de frango grelhado", "tipo": "proteínas"},
+        {"nome": "abacate", "tipo": "fruta"},
+        {"nome": "alface", "tipo": "verduras"},
+        {"nome": "tomate", "tipo": "fruta"}
+      ],
+      "instrucoes": "Envolva os ingredientes em uma tortilla de trigo integral e sirva com molho de iogurte."
+    },
+    {
+      "id": 6,
+      "nome": "Sopa de Lentilhas",
+      "ingredientes": [
+        {"nome": "lentilhas", "tipo": "legumes"},
+        {"nome": "cebola", "tipo": "verduras"},
+        {"nome": "cenoura", "tipo": "legumes"},
+        {"nome": "salsinha", "tipo": "verduras"}
+      ],
+      "instrucoes": "Cozinhe as lentilhas com vegetais e tempere com salsinha fresca."
+    },
+    {
+      "id": 7,
+      "nome": "Salada de Frutas Tropicais",
+      "ingredientes": [
+        {"nome": "abacaxi", "tipo": "fruta"},
+        {"nome": "manga", "tipo": "fruta"},
+        {"nome": "kiwi", "tipo": "fruta"},
+        {"nome": "hortelã", "tipo": "verduras"}
+      ],
+      "instrucoes": "Misture as frutas tropicais e decore com folhas de hortelã."
+    },
+    {
+      "id": 8,
+      "nome": "Hummus de Grão-de-Bico",
+      "ingredientes": [
+        {"nome": "grão-de-bico", "tipo": "legumes"},
+        {"nome": "azeite de oliva", "tipo": "outros"},
+        {"nome": "limão", "tipo": "fruta"},
+        {"nome": "alho", "tipo": "temperos"}
+      ],
+      "instrucoes": "Bata os ingredientes no processador até obter um hummus cremoso. Sirva com vegetais."
+    },
+    {
+      "id": 9,
+      "nome": "Tigela de Açaí",
+      "ingredientes": [
+        {"nome": "açaí congelado", "tipo": "fruta"},
+        {"nome": "banana", "tipo": "fruta"},
+        {"nome": "granola", "tipo": "outros"},
+        {"nome": "mel", "tipo": "outros"}
+      ],
+      "instrucoes": "Misture o açaí e a banana no liquidificador, cubra com granola e regue com mel."
+    }
+  ]
+}
