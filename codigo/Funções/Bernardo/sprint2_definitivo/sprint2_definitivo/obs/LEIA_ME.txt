@@ -1,0 +1,28 @@
+O QUE FOI ENTREGUE?
+
+A funcionalidade entregue foi barra de pesquisas.
+
+Quando abrir e rodar o código, aparecerá apenas essa funcionalidade avulsa.
+
+POR QUE OS RESULTADOS NÃO POSSUEM ESTILO COMPATÍVEL COM A PÁGINA?
+
+	OBS: BUSCAR COM BASE NO QUE TEM NA GELADEIRA, PREFERÊNCIAS DE INGREDIENTES, RESTRIÇÕES ALIMENTARES FICA A CARGO DE OUTRA FUNCIONALIDADE (FILTRO DE BUSCAS)
+
+	A MESMA COISA OCORRE PARA A APRESENTAÇÃO DOS RESULTADOS DA BUSCA, QUE FOI FEITA DE MANEIRA MINIMALISTA JUSTAMENTE POR ESSE MOTIVO.
+
+COMO TESTAR: 
+
+1) Clique em estrair o conteúdo do zip,
+2) Abra a pasta estraída no seu vscode (abrir com --> vscode)
+3) Clique no index.html --> rode no seu navegador com o liveServer
+
+Se o procedimento for feito corretamente, abrirá uma página web, de fundo azul claro, com uma lupa no centro superior da página.	
+
+4) Posicione o mouse em cima da lupa para abrir a barra de pesquisas.
+5) Digite alguma coisa, de preferência um dos testes recomendados no documento pdf (dentro do zip).
+6) Precione enter ou na lupa mesmo. Os resultados aparecem do lado esquerdo superior.
+7) Clique em um dos resultados para abrir os detalhes da receita (que aparecem no canto superior direito).
+
+SE NÃO FUNCIONAR: 
+
+Abra o link que está dentro do documento pdf, que veio dentro do zip. Ele é um link para o mesmo projeto no meu replit, para previnir situações desagradáveis.

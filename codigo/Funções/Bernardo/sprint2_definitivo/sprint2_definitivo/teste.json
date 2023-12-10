@@ -1,0 +1,366 @@
+{
+    "receitas": [
+      {
+        "id": 1,
+        "nome": "Salada de Quinoa",
+        "ingredientes": ["quinoa", "tomate", "pepino", "azeitonas", "manjericão"],
+        "instrucoes": "Cozinhe a quinoa e misture com os ingredientes cortados. Tempere com azeite e manjericão fresco."
+      },
+      {
+        "id": 2,
+        "nome": "Frango Grelhado com Vegetais",
+        "ingredientes": ["peito de frango", "brócolis", "pimentão", "cenoura"],
+        "instrucoes": "Grelhe o frango e os vegetais até que fiquem dourados. Sirva com um molho de iogurte."
+      },
+      {
+        "id": 3,
+        "nome": "Smoothie de Frutas",
+        "ingredientes": ["morango", "banana", "iogurte", "espinafre"],
+        "instrucoes": "Misture as frutas, o iogurte e o espinafre no liquidificador até obter uma consistência suave."
+      },
+      {
+        "id": 4,
+        "nome": "Peixe Assado com Limão",
+        "ingredientes": ["filé de peixe", "limão", "alho", "azeite"],
+        "instrucoes": "Tempere o peixe com alho, regue com azeite e asse com fatias de limão."
+      },
+      {
+        "id": 5,
+        "nome": "Wrap de Frango e Abacate",
+        "ingredientes": ["peito de frango grelhado", "abacate", "alface", "tomate"],
+        "instrucoes": "Envolva os ingredientes em uma tortilla de trigo integral e sirva com molho de iogurte."
+      },
+      {
+        "id": 6,
+        "nome": "Sopa de Lentilhas",
+        "ingredientes": ["lentilhas", "cebola", "cenoura", "salsinha"],
+        "instrucoes": "Cozinhe as lentilhas com vegetais e tempere com salsinha fresca."
+      },
+      {
+        "id": 7,
+        "nome": "Salada de Frutas Tropicais",
+        "ingredientes": ["abacaxi", "manga", "kiwi", "hortelã"],
+        "instrucoes": "Misture as frutas tropicais e decore com folhas de hortelã."
+      },
+      {
+        "id": 8,
+        "nome": "Hummus de Grão-de-Bico",
+        "ingredientes": ["grão-de-bico", "azeite de oliva", "limão", "alho"],
+        "instrucoes": "Bata os ingredientes no processador até obter um hummus cremoso. Sirva com vegetais."
+      },
+      {
+        "id": 9,
+        "nome": "Tigela de Açaí",
+        "ingredientes": ["açaí congelado", "banana", "granola", "mel"],
+        "instrucoes": "Misture o açaí e a banana no liquidificador, cubra com granola e regue com mel."
+      },
+      {
+        "id": 10,
+        "nome": "Wrap de Abacate e Quinoa",
+        "ingredientes": ["abacate", "quinoa cozida", "cebola roxa", "espinafre"],
+        "instrucoes": "Envolva os ingredientes em uma tortilla e sirva com molho de iogurte."
+      },
+      {
+        "id": 11,
+        "nome": "Brownie de Chocolate",
+        "ingredientes": ["chocolate amargo", "manteiga", "açúcar", "ovos", "farinha"],
+        "instrucoes": "Derreta o chocolate e a manteiga, misture com açúcar, ovos e farinha, asse até ficar firme e crocante."
+      },
+      {
+        "id": 12,
+        "nome": "Sorvete de Baunilha",
+        "ingredientes": ["leite", "creme de leite", "açúcar", "baunilha"],
+        "instrucoes": "Misture todos os ingredientes, congele e sirva com coberturas de sua escolha."
+      },
+      {
+        "id": 13,
+        "nome": "Torta de Maçã",
+        "ingredientes": ["maçãs", "açúcar", "canela", "massa de torta"],
+        "instrucoes": "Faça um recheio com maçãs, açúcar e canela, coloque na massa de torta e asse até dourar."
+      },
+      {
+        "id": 14,
+        "nome": "Cupcake de Morango",
+        "ingredientes": ["morango", "farinha", "açúcar", "manteiga", "ovos"],
+        "instrucoes": "Misture os ingredientes, asse em forminhas e decore com glacê de morango."
+      },
+      {
+        "id": 15,
+        "nome": "Donuts de Chocolate",
+        "ingredientes": ["farinha", "açúcar", "coco ralado", "chocolate derretido"],
+        "instrucoes": "Misture os ingredientes, molde os donuts e cubra com chocolate e coco ralado."
+      },
+      {
+        "id": 16,
+        "nome": "Milkshake de Chocolate",
+        "ingredientes": ["sorvete de chocolate", "leite", "chantilly", "chocolate ralado"],
+        "instrucoes": "Bata o sorvete e o leite no liquidificador, decore com chantilly e chocolate ralado."
+      },
+      {
+        "id": 17,
+        "nome": "Biscoitos de Manteiga de Amendoim",
+        "ingredientes": ["manteiga de amendoim", "açúcar", "ovos", "farinha de amendoim"],
+        "instrucoes": "Misture todos os ingredientes, faça bolinhas, achate-as e asse até dourar."
+      },
+      {
+        "id": 18,
+        "nome": "Chocolate Quente Cremoso",
+        "ingredientes": ["leite", "chocolate em pó", "açúcar", "chantilly"],
+        "instrucoes": "Aqueça o leite com o chocolate e o açúcar, sirva com chantilly por cima."
+      },
+      {
+        "id": 19,
+        "nome": "Bolo de Morango",
+        "ingredientes": ["morango", "açúcar", "ovos", "farinha", "chantilly"],
+        "instrucoes": "Faça um bolo de morango e decore com chantilly e morangos frescos."
+      },
+      {
+        "id": 20,
+        "nome": "Cookies com Gotas de Chocolate",
+        "ingredientes": ["chocolate meio amargo", "açúcar mascavo", "manteiga", "farinha", "ovos"],
+        "instrucoes": "Misture os ingredientes, coloque as gotas de chocolate, asse até que fiquem dourados e crocantes."
+      },
+      {
+        "id": 21,
+        "nome": "Feijoada",
+        "ingredientes": ["feijão-preto", "linguiça", "carne-seca", "costelinha de porco"],
+        "instrucoes": "Cozinhe o feijão-preto com as carnes, sirva com arroz, couve e laranja."
+      },
+      {
+        "id": 22,
+        "nome": "Arroz e Feijão",
+        "ingredientes": ["arroz", "feijão", "carne moída", "batata frita"],
+        "instrucoes": "Cozinhe o arroz e o feijão, faça a carne moída e a batata frita como acompanhamento."
+      },
+      {
+        "id": 23,
+        "nome": "Frango Assado com Batatas",
+        "ingredientes": ["frango inteiro", "batatas", "alho", "limão", "azeite"],
+        "instrucoes": "Tempere o frango com alho, limão e azeite, asse com batatas até dourar."
+      },
+      {
+        "id": 24,
+        "nome": "Macarrão à Bolonhesa",
+        "ingredientes": ["macarrão", "carne moída", "molho de tomate", "queijo ralado"],
+        "instrucoes": "Cozinhe o macarrão e faça um molho de carne moída e molho de tomate para cobrir."
+      },
+      {
+        "id": 25,
+        "nome": "Pão de Queijo",
+        "ingredientes": ["polvilho", "queijo", "leite", "ovos"],
+        "instrucoes": "Misture os ingredientes, faça pequenas bolinhas e asse até que fiquem douradas."
+      },
+      {
+        "id": 26,
+        "nome": "Feijão-Tropeiro",
+        "ingredientes": ["feijão", "farinha de mandioca", "linguiça", "bacon"],
+        "instrucoes": "Cozinhe o feijão e misture com a farinha de mandioca, linguiça e bacon."
+      },
+      {
+        "id": 27,
+        "nome": "Strogonoff de Carne",
+        "ingredientes": ["carne de boi", "creme de leite", "mostarda", "ketchup"],
+        "instrucoes": "Frite a carne, adicione creme de leite, mostarda e ketchup, sirva com arroz e batatas fritas."
+      },
+      {
+        "id": 28,
+        "nome": "Tutu de Feijão",
+        "ingredientes": ["feijão", "farinha de mandioca", "bacon", "linguiça"],
+        "instrucoes": "Cozinhe o feijão e misture com a farinha de mandioca, bacon e linguiça."
+      },
+      {
+        "id": 29,
+        "nome": "Moqueca de Peixe",
+        "ingredientes": ["peixe", "leite de coco", "dendê", "pimentões"],
+        "instrucoes": "Cozinhe o peixe com leite de coco, dendê e pimentões, sirva com arroz branco."
+      },
+      {
+        "id": 30,
+        "nome": "Bife à Milanesa",
+        "ingredientes": ["bife de carne", "farinha de rosca", "ovos", "limão"],
+        "instrucoes": "Empane o bife com farinha de rosca e ovos, frite até dourar, sirva com limão."
+      },
+      {
+        "id": 31,
+        "nome": "Carne de Panela",
+        "ingredientes": ["carne de boi", "cebola", "alho", "tomate", "batatas"],
+        "instrucoes": "Cozinhe a carne com cebola, alho, tomate e batatas até que fique macia."
+      },
+      {
+        "id": 32,
+        "nome": "Coxinha",
+        "ingredientes": ["frango desfiado", "massa de coxinha", "requeijão", "óleo"],
+        "instrucoes": "Recheie a massa com frango desfiado e requeijão, frite até dourar."
+      },
+      {
+        "id": 33,
+        "nome": "Tapioca",
+        "ingredientes": ["goma de tapioca", "queijo coalho", "manteiga", "goiabada"],
+        "instrucoes": "Aqueça a goma na frigideira, recheie com queijo coalho e goiabada, dobre ao meio e sirva."
+      },
+      {
+        "id": 34,
+        "nome": "Risoto de Frango",
+        "ingredientes": ["arroz arbóreo", "frango desfiado", "caldo de galinha", "queijo parmesão"],
+        "instrucoes": "Cozinhe o arroz com caldo de galinha, adicione frango desfiado e queijo parmesão."
+      },
+      {
+        "id": 35,
+        "nome": "Canja de Galinha",
+        "ingredientes": ["frango", "arroz", "cenoura", "salsinha", "caldo de galinha"],
+        "instrucoes": "Cozinhe o frango em água com caldo de galinha, adicione arroz, cenoura e salsinha. Cozinhe até que o arroz esteja macio e o frango esteja bem cozido. Sirva quente."
+      },
+      {
+        "id": 36,
+        "nome": "Feijoada Paulista",
+        "ingredientes": ["feijão-preto", "linguiça calabresa", "carne-seca", "costelinha de porco"],
+        "instrucoes": "Cozinhe o feijão-preto com as carnes, sirva com arroz, couve e laranja."
+      },
+      {
+        "id": 37,
+        "nome": "Virado à Paulista",
+        "ingredientes": ["feijão-tropeiro", "linguiça", "couve", "farinha de mandioca"],
+        "instrucoes": "Prepare o feijão-tropeiro com linguiça, couve e farinha de mandioca, sirva com banana e ovo frito."
+      },
+      {
+        "id": 38,
+        "nome": "Bobó de Camarão",
+        "ingredientes": ["camarão", "aipim", "leite de coco", "dendê"],
+        "instrucoes": "Cozinhe o aipim e faça um creme com leite de coco, dendê e camarão, sirva com arroz branco."
+      },
+      {
+        "id": 39,
+        "nome": "Pão de Queijo Mineiro",
+        "ingredientes": ["polvilho", "queijo minas", "leite", "ovos"],
+        "instrucoes": "Misture os ingredientes, faça pequenas bolinhas e asse até que fiquem douradas."
+      },
+      {
+        "id": 40,
+        "nome": "Quindim Carioca",
+        "ingredientes": ["gemas de ovo", "açúcar", "coco ralado", "manteiga"],
+        "instrucoes": "Misture as gemas com açúcar, coco ralado e manteiga, asse até dourar e caramelizar."
+      },
+      {
+        "id": 41,
+        "nome": "Tacacá",
+        "ingredientes": ["goma de tapioca", "camarão seco", "jambu", "tucupi"],
+        "instrucoes": "Prepare a goma, sirva com tucupi e jambu, decore com camarão seco."
+      },
+      {
+        "id": 42,
+        "nome": "Pato no Tucupi",
+        "ingredientes": ["pato", "tucupi", "jambu", "alho"],
+        "instrucoes": "Cozinhe o pato com tucupi, adicione jambu e alho, sirva com arroz."
+      },
+      {
+        "id": 43,
+        "nome": "Açaí na Tigela",
+        "ingredientes": ["açaí congelado", "banana", "granola", "mel"],
+        "instrucoes": "Misture o açaí e a banana no liquidificador, cubra com granola e regue com mel."
+      },
+      {
+        "id": 44,
+        "nome": "Maniçoba",
+        "ingredientes": ["folhas de maniva", "carne de porco", "farinha de mandioca", "tucupi"],
+        "instrucoes": "Cozinhe as folhas de maniva com carne de porco e farinha de mandioca, sirva com tucupi."
+      },
+      {
+        "id": 45,
+        "nome": "Bolo de Cupuaçu",
+        "ingredientes": ["cupuaçu", "açúcar", "farinha de trigo", "óleo"],
+        "instrucoes": "Misture os ingredientes, asse até dourar, sirva com açúcar por cima."
+      },
+      {
+        "id": 46,
+        "nome": "Moqueca Baiana",
+        "ingredientes": ["peixe", "camarão", "azeite de dendê", "pimentões"],
+        "instrucoes": "Cozinhe o peixe e camarão com azeite de dendê, adicione pimentões e sirva com arroz."
+      },
+      {
+        "id": 47,
+        "nome": "Cuscuz Nordestino",
+        "ingredientes": ["flocos de milho", "água", "sal", "manteiga"],
+        "instrucoes": "Hidrate os flocos de milho, cozinhe no vapor e sirva com manteiga e café."
+      },
+      {
+        "id": 48,
+        "nome": "Carne-de-Sol com Mandioca",
+        "ingredientes": ["carne-de-sol", "mandioca", "queijo coalho", "manteiga"],
+        "instrucoes": "Cozinhe a carne-de-sol com mandioca, sirva com queijo coalho e manteiga de garrafa."
+      },
+      {
+        "id": 49,
+        "nome": "Canjica Nordestina",
+        "ingredientes": ["milho de canjica", "leite de coco", "açúcar", "cravo e canela"],
+        "instrucoes": "Cozinhe a canjica com leite de coco, açúcar e especiarias, sirva quente."
+      },
+      {
+        "id": 50,
+        "nome": "Acarajé",
+        "ingredientes": ["feijão-fradinho", "camarão seco", "azeite de dendê", "vatapá"],
+        "instrucoes": "Prepare a massa de feijão-fradinho, frite e recheie com camarão seco e vatapá."
+      },
+      {
+        "id": 51,
+        "nome": "Pequi com Frango",
+        "ingredientes": ["pequi", "frango", "óleo de pequi", "guariroba"],
+        "instrucoes": "Cozinhe o frango com pequi, adicione guariroba e óleo de pequi, sirva com arroz."
+      },
+      {
+        "id": 52,
+        "nome": "Pirarucu de Casaca",
+        "ingredientes": ["pirarucu", "banana-da-terra", "tucupi", "farinha de mandioca"],
+        "instrucoes": "Cozinhe o pirarucu com banana-da-terra, tucupi e farinha de mandioca, sirva com arroz."
+      },
+      {
+        "id": 53,
+        "nome": "Peixe Pintado na Telha",
+        "ingredientes": ["peixe pintado", "tucupi", "alho", "pimenta de cheiro"],
+        "instrucoes": "Asse o peixe pintado na telha com tucupi, alho e pimenta de cheiro."
+      },
+      {
+        "id": 54,
+        "nome": "Guariroba Refogada",
+        "ingredientes": ["guariroba", "alho", "cebola", "azeite"],
+        "instrucoes": "Refogue a guariroba com alho, cebola e azeite, sirva como acompanhamento."
+      },
+      {
+        "id": 55,
+        "nome": "Pequi com Arroz",
+        "ingredientes": ["pequi", "arroz", "óleo de pequi", "alho"],
+        "instrucoes": "Cozinhe o arroz com pequi, adicione alho e óleo de pequi, sirva com carne."
+      },
+      {
+        "id": 56,
+        "nome": "Churrasco Gaúcho",
+        "ingredientes": ["carne de boi", "sal grosso", "fogo de chão"],
+        "instrucoes": "Prepare a carne com sal grosso, asse no fogo de chão e sirva com chimarrão."
+      },
+      {
+        "id": 57,
+        "nome": "Barreado",
+        "ingredientes": ["carne cozida", "farinha de mandioca", "cebola", "banana-da-terra"],
+        "instrucoes": "Cozinhe a carne com farinha de mandioca e banana-da-terra, sirva com arroz."
+      },
+      {
+        "id": 58,
+        "nome": "Sopa de Agnoline",
+        "ingredientes": ["agnoline", "caldo de galinha", "legumes", "salsinha"],
+        "instrucoes": "Cozinhe os agnoline com caldo de galinha e legumes, salpique salsinha."
+      },
+      {
+        "id": 59,
+        "nome": "Cuca de Banana",
+        "ingredientes": ["banana", "farinha de trigo", "açúcar", "canela"],
+        "instrucoes": "Misture os ingredientes, asse até dourar, sirva com café preto."
+      },
+      {
+        "id": 60,
+        "nome": "Pierogi Polonês",
+        "ingredientes": ["massa de pierogi", "recheio de batata e queijo", "cebola frita"],
+        "instrucoes": "Cozinhe os pierogi, sirva com cebola frita e creme de leite."
+      }
+
+    ]
+  }
+  
