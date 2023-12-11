@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>detalhes da receita</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+        <style src="style.css"></style>
+</head>
+
+<body>
+    <!--------------------------------------navbar------------------------------------------------------>
+
+    <div class="container">
+        
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            
+
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.jfif"  width="60" height="60">
+                  </a>
+                  <a class="navbar-brand" href="index.html">fridgeasy</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="salvos.html">receitas salvas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="lista.html">lista de compras</a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+            <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                <button type="button" class="btn btn-primary">Sign-up</button>
+            </div>
+        </header>
+    </div>
+
+    <div class="b-example-divider"></div>
+
+    <!--------------------------------------card detalhe------------------------------------------------------>
+
+    <div id="divdetalhe">
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+
+
+
+
+
+   
+        
+
+        
+        
+   
+    
+
+    <!--------------------------------------footer------------------------------------------------------>
+
+    <footer>
+        <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+                </ul>
+                <p class="text-center text-body-secondary">&copy; 2023 fridgeasy, Inc</p>
+            </footer>
+        </div>
+    </footer>
+    <!--------------------------------------script------------------------------------------------------>
+    <script src="script.js"></script>
+    <script>
+
+fetch('https://definitivo.pedroporto9.repl.co/receitas')
+    .then(response => response.json())
+    .then(data => {
+      const recipes = data;
+
+
+
+
+
+
+
+      function carregadetalhes(){
+
+const urlParams = new URLSearchParams(window.location.search);
+const recipeId = urlParams.get('id');
+let carddetalhe = document.getElementById('divdetalhe');
+let detalhes='';
+for(let i=0;i<recipes.length;i++){
+  if(recipes[i].id == recipeId){
+  let receita  = recipes[i];
+  const isSaved = receita.salvo === true;
+          const checkboxChecked = isSaved ? 'checked' : '';
+  
+  detalhes += `<div class="card m-3 "  data-id="${receita.id}">
+  <img src="${receita.img}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">${receita.nome}</h4>
+    <div  class=" d-inline-flex m-2 form-check">
+    <input type="checkbox" class="form-check-input" ${checkboxChecked} >
+    <label class="form-check-label" for="exampleCheck1">salvo</label>
+  </div>
+    <div class="list-group">
+  <button type="button" class="list-group-item list-group-item-action active" aria-current="true"><strong>Ingredientes</strong></button>
+  <button type="button" class="list-group-item list-group-item-action">${receita.ingredientes[0].nome}</button>
+  <button type="button" class="list-group-item list-group-item-action">${receita.ingredientes[1].nome}</button>
+  <button type="button" class="list-group-item list-group-item-action">${receita.ingredientes[2].nome}</button>
+  <button type="button" class="list-group-item list-group-item-action">${receita.ingredientes[3].nome}</button>
+</div>
+<div class="card my-3">
+  
+  <div class="card-body">
+    <h5 class="card-title">Modo de preparo</h5>
+    <p class="card-text">${receita.modo_preparo}</p>
+  </div>
+</div>
+  </div>
+  </div>`;
+  
+  }
+  }
+
+
+
+
+carddetalhe.innerHTML = detalhes;
+}
+carregadetalhes();
+
+
+
+function setsalvo(id,status){
+
+fetch(`https://definitivo.pedroporto9.repl.co/receitas/`+id, {
+  method: 'PATCH',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({salvo: status})
+})
+
+
+
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Erro ao atualizar o recurso');
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Atualização realizada com sucesso:', data);
+  })
+  .catch(error => {
+    console.error('Erro ao atualizar:', error);
+  });
+
+} 
+
+
+    
+    
+    
+document.addEventListener('click', function (event) {
+const checkboxSalvar = event.target.closest('.form-check-input');
+if (checkboxSalvar) {
+  const card = checkboxSalvar.closest('.card');
+  const id = card.dataset.id;
+  const status = checkboxSalvar.checked;
+  setsalvo(id, status);
+}
+});
+
+})
+
+</script>
+</body>
+
+</html>

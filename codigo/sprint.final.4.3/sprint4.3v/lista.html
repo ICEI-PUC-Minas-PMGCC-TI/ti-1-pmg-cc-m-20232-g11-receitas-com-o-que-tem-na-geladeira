@@ -1,0 +1,251 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <title>receitas salvas</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+          </script>
+          <style src="style.css"></style>
+  </head>
+
+  <body>
+      <!--------------------------------------navbar------------------------------------------------------>
+
+      <div class="container">
+          
+          <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+              
+
+              <nav class="navbar navbar-expand-lg ">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                      <img src="img/logo.jfif"  width="60" height="60">
+                    </a>
+                    <a class="navbar-brand" href="index.html">fridgeasy</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="salvos.html">receitas salvas</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="lista.html">lista de compras</a>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+
+              <div class="col-md-3 text-end">
+                  <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                  <button type="button" class="btn btn-primary">Sign-up</button>
+              </div>
+          </header>
+      </div>
+
+      <div class="b-example-divider"></div>
+
+
+  <!--------------------------------------form------------------------------------------------------>
+
+
+
+
+      <form class="m-4 border p-2">
+        <h1>Cadastrar item na lista:</h1>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Nome do item</label>
+          <input type="text" class="form-control" id="itemnome" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">quantidade</label>
+          <input type="text" class="form-control" id="itemqnt">
+        </div>
+        <button id="salvarlista" type="button" class="btn btn-primary">salvar</button>
+      </form>
+
+
+
+
+
+
+      
+
+      <!--------------------------------------lista------------------------------------------------------>
+
+      <table class="table table-striped table-hover m-3 p-3">
+        <h1 class="m-3">lista de compras:</h1>
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">item</th>
+            <th scope="col">quantidade</th>
+          </tr>
+        </thead>
+        <tbody id="listacompra" >
+          
+          
+        </tbody>
+      </table>
+      
+
+
+      <!--------------------------------------footer------------------------------------------------------>
+
+      <footer>
+          <div class="container">
+              <footer class="py-3 my-4">
+                  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+                  </ul>
+                  <p class="text-center text-body-secondary">&copy; 2023 fridgeasy, Inc</p>
+              </footer>
+          </div>
+      </footer>
+      <!--------------------------------------script------------------------------------------------------>
+      <script src="script.js"></script>
+      <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function carregalista(){
+          fetch('https://lista.pedroporto9.repl.co/itens')
+      .then(response => response.json())
+      .then(data => {
+        const itens = data;
+
+
+  let telalista = document.getElementById('listacompra');
+  let stritens='';
+  for(let i=0;i<itens.length;i++){
+    
+  
+    
+    
+    stritens += `<tr data-id="${itens[i].id}" >
+            <th scope="row"></th>
+            <td>${itens[i].nome}</td>
+            <td>${itens[i].qnt}</td>
+            <td><button type="button"  class="btn btn-danger">excluir</button></td>
+            
+          </tr>`;
+    
+        
+    
+    }
+
+    
+      
+
+  telalista.innerHTML = stritens;
+
+  })
+  }
+
+  carregalista();
+
+
+
+
+  document.getElementById('salvarlista').addEventListener('click', function () {
+
+
+    const itemName = document.getElementById('itemnome').value;
+          const itemQuantity = document.getElementById('itemqnt').value;
+
+          const newItem = {
+              nome: itemName,
+              qnt: itemQuantity
+          };
+
+          fetch('https://lista.pedroporto9.repl.co/itens', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(newItem)
+          })
+              .then(response => response.json())
+              .then(data => {
+                  console.log('Novo item adicionado:', data);
+                  carregalista();
+              })
+              .catch(error => {
+                  console.error('Erro ao adicionar novo item:', error);
+              });
+
+
+
+              
+          
+      });
+
+      function excluirItem(itemId) {
+    fetch(`https://lista.pedroporto9.repl.co/itens/${itemId}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Erro ao excluir o item');
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('Item excluído com sucesso:', data);
+        carregalista(); // Atualize a lista após a exclusão
+      })
+      .catch(error => {
+        console.error('Erro ao excluir o item:', error);
+      });
+  }
+
+
+
+
+
+  document.addEventListener('click', function (event) {
+    if (event.target.classList.contains('btn-danger')) {
+      const botaoexcluir = event.target;
+      const itemRow = botaoexcluir.closest('tr');
+      const id = itemRow.dataset.id;
+      excluirItem(id);
+    }
+  });
+
+
+  
+
+
+  </script>
+  </body>
+
+  </html>
