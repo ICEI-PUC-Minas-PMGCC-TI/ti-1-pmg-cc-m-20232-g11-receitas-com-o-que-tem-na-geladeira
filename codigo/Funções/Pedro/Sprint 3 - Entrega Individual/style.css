@@ -1,0 +1,12 @@
+
+
+
+header {
+    width: 100%; /* Defina a largura desejada para o header */
+    margin: 0 auto; /* Centralize o header horizontalmente */
+}
+
+.card-img-top{
+    width: 400px;
+    height: 400px;
+}
