@@ -1,35 +1,37 @@
 <<<<<<< HEAD
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: 
+title: FridgEasy
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: Sousa Polakiewicz
+    given-names: Bernardo
+  - family-names: Micaele Soares Ferreira
+    given-names: Jamille 
+  - family-names: Santos Dias Gomes
+    given-names: Matheus 
+  - family-names: Henrique Fonseca de Assis
+    given-names: Paulo 
+  - family-names: Porto Ramalho
+    given-names: Pedro 
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Viera Carneiro
+    given-names: Rommel
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Amy Saldanha Rivero
+    given-names: Ilo 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Carlos Oliveira Caetano
+    given-names: João 
 keywords:
-  - 
-  - 
-repository-code: 
+  - Receitas
+  - Geladeira
+repository-code: https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-m-20232-g11-receitas-com-o-que-tem-na-geladeira
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2022-07-14
+date-released: 2023-12-13
 =======
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
